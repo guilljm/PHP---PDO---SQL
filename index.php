@@ -50,37 +50,3 @@ if ((isset($_POST['firstname'])) && (isset($_POST['lastname']))) {
 </body>
 
 </html>
-<!-- 
-try {
-$pdo = new PDO(DSN, USER, PASSWORD);
-
-// $name = "JMG2";
-// $capacity = 251;
-// $country = "UK";
-
-// $query = "INSERT INTO school (name, capacity, country) VALUES (:name, :capacity, :country)";
-// $statement = $pdo->prepare($query);
-// $statement->bindValue(':name', $name, PDO::PARAM_STR);
-// $statement->bindValue(':capacity', $capacity, PDO::PARAM_INT);
-// $statement->bindValue(':country', $country, PDO::PARAM_STR);
-// $statement->execute();
-
-$query = "SELECT * FROM friend";
-$statement = $pdo->query($query);
-$friends = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-foreach ($friends as $friend) {
-echo "firstname = " . $friend['firstname'] . " lastname = " . $friend['lastname'] . PHP_EOL;
-}
-
-$friends = $statement->fetchAll(PDO::FETCH_OBJ);
-
-foreach ($friends as $friend) {
-echo "firstname = " . $friend->firstname . " lastname = " . $friend->lastname . PHP_EOL;
-}
-
-echo "Nombre d'enregistrements : " . $statement->rowCount() . PHP_EOL;
-} catch (PDOException $e) {
-print "Erreur !: " . $e->getMessage() . "<br />";
-die();
-} -->
